@@ -6,25 +6,18 @@ import Favicon from "./assets/favicon.png";
 import React, { useState, useEffect } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
 const Stack = createNativeStackNavigator();
 
 
-export default function App() {
+export default function anotherapp() {
   
 const [count, setCount] = useState(0);
-const [lastcount, setString ]= useState("");
+const [lastcount, setString ]= useState("string");
 
 
-  return (   
-    <>
-
-<Stack.Navigator>
-    <Stack.Screen name="Home" component={anotherapp} />
-
-    </Stack.Navigator>
+  return (    
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Another pages!</Text>
       <StatusBar style="auto" />
       <Test name = "Andrews the legend"></Test>
       <Logo source={Favicon}/>
@@ -42,8 +35,6 @@ const [lastcount, setString ]= useState("");
       </Button>
       <Text>You clicked {count} times. {lastcount}</Text>
     </View>
-    
-    </> 
     
   );
 }
