@@ -5,10 +5,24 @@ import Logo from './components/image.js';
 import Favicon from "./assets/favicon.png";
 import React, { useState, useEffect } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import axios from 'axios';
 
 
 const Stack = createNativeStackNavigator();
 
+/*export default function Route(){
+  return(
+    <>
+    <View>
+      <Button
+      title ="another page"
+      onPress={() => navigation.navigate('Anotherapp')   }
+    />
+    </View>
+
+</>
+  )
+}*/
 
 export default function App() {
   
@@ -19,10 +33,7 @@ const [lastcount, setString ]= useState("");
   return (   
     <>
 
-<Stack.Navigator>
-    <Stack.Screen name="Home" component={anotherapp} />
 
-    </Stack.Navigator>
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
@@ -41,8 +52,11 @@ const [lastcount, setString ]= useState("");
       <Text>vous avez clique sur ajouter</Text>
       </Button>
       <Text>You clicked {count} times. {lastcount}</Text>
+      <Button>
+
+      </Button>
+
     </View>
-    
     </> 
     
   );

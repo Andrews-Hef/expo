@@ -9,7 +9,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const Stack = createNativeStackNavigator();
 
 
-export default function anotherapp() {
+export default function Anotherapp() {
   
 const [count, setCount] = useState(0);
 const [lastcount, setString ]= useState("string");
@@ -26,13 +26,13 @@ const [lastcount, setString ]= useState("string");
         onPress={() => { setCount(count +1),setString("ta cliquer sur +1")} 
       }
       />
+      
       <Button
         title ="ou clique ici"
         onPress={() => {setCount(count -1),setString("ta cliquer sur -1")}
       }
-      >
-      <Text>vous avez clique sur ajouter</Text>
-      </Button>
+      />
+      
       <Text>You clicked {count} times. {lastcount}</Text>
     </View>
     
